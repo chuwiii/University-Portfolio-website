@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --dark-grey: #ffffff80;
+  --white: #ffffff;
+  --green: #39b54a;
+  --black: #000000;
+  --light-grey: #e6e6e6;
+  --lora: "Lora", serif;
+  --mont: "Montserrat", sans-serif;
+  --incognito-grey: #ffffff40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  background-color: #121212;
+  margin-top: auto;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+h1 {
+  font-family: var(--mont);
+}
+
+h2 {
+  font-family: var(--mont);
+}
+
+main {
+  height: 100%;
+}
+
+p {
+  font-family: var(--mont);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--dark-grey);
+  font-size: 1.2rem;
+}
+
+/* classes  */
+.about-img {
+  object-fit: cover;
+  object-position: 0% 40%;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  /* border: 0.3px solid var(--light-grey); */
+}
+
+.about-me__button {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.75rem;
+  font-family: var(--mont);
+  font-weight: 600;
+  border: 0.2rem solid var(--white);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.about-me__button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.about-me__description {
+  margin: 1.5rem 9%;
+  color: var(--black);
+  font-family: var(--lora);
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.about-me__header {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.about-me__language--img img {
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  margin: 2%;
+}
+
+.about-section__header hr {
+  color: var(--white);
+  border: 0.1rem var(--white) solid;
+  overflow: hidden;
+  margin: 2rem auto;
+  width: 18rem;
+}
+
+.about-section__header h1 {
+  margin-top: 1.5rem;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-section__header h2 {
+  color: var(--black);
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  font-family: var(--mont);
+  font-weight: 300;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.header {
+  position: absolute;
+  z-index: 100;
+}
+
+.header-logo {
+  display: inline;
+}
+
+.header-nav {
+  background: #0c0c0c;
+  position: fixed;
+  height: 100%;
+  width: 17.5rem;
+  right: 0;
+  z-index: 1;
+  /* display: none; */
+  transform: translateX(100%);
+  transition: 0.7s ease-in-out;
+}
+
+.header-nav__close {
+  color: var(--white);
+  position: absolute;
+  top: 2.3rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.header-nav__close:hover {
+  color: var(--dark-grey);
+  transition: 0.3s ease-in-out;
+}
+
+.header-nav__content {
+  color: var(--green);
+  position: relative;
+  top: 2.85rem;
+  left: 2rem;
+}
+
+.header-nav__content a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header-nav__content a:hover {
+  color: var(--dark-grey);
+  transition: 0.3s ease-in-out;
+}
+.header-nav__content h1 {
+  font-size: 0.6875rem;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+}
+
+.header-nav__content li {
+  margin-top: 1.5rem;
+}
+
+.header-nav__content p {
+  margin-top: 4rem;
+  color: var(--incognito-grey);
+  font-family: var(--mont);
+  font-weight: 300;
+  font-size: 0.6rem;
+}
+
+.header-nav__content ul {
+  list-style-type: none;
+  margin-top: 3rem;
+  padding: 0%;
+  font-family: var(--mont);
+  font-size: 1.4rem;
+}
+
+.home-background {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/LandingImage.jpg);
+  display: absolute;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.home-content__button {
+  margin-top: 3.5rem;
+}
+
+.landing {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  color: white;
+  position: relative;
+  /* padding-left: 5rem; */
+  padding-top: 22rem;
+  text-align: center;
+}
+
+.landing h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+}
+
+.landing h2 {
+  font-size: 1.3rem;
+  padding: 2% 3% 0%;
+}
+
+.landing p {
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  position: fixed;
+  right: 2rem;
+  top: 1.7rem;
+  text-decoration: none;
+  color: white;
+  display: inline;
+  vertical-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-toggle h1 {
+  display: none;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+  letter-spacing: 0.2rem;
+}
+
+.nav-toggle:hover {
+  color: var(--white);
+}
+
+.nav-toggle h1:hover,
+.nav-toggle svg:hover {
+  color: var(--white);
+}
+
+.site-logo {
+  display: inline-block;
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+}
+
+.site-logo__img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 8%;
+}
+
+/* ID  */
+#about {
+  display: block;
+  background-color: var(--green);
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+#home {
+  /* background-image: url(./images/pexels-markus-spiske-360591.jpg); */
+  background-size: cover;
+  background-position: 50% 10%;
+  height: 100%;
+  /* filter: blur(0.25rem); */
+}
+
+/* Media queries  */
+@media (min-width: 400px) {
+  .nav-toggle h1 {
+    display: inline;
+  }
+}
+
+@media (min-width: 600px) {
+  .about-me__description {
+    margin: 1.5rem 13%;
+  }
+
+  .about-section__header hr {
+    width: 20rem;
+  }
+
+  .about-section__header h1 {
+    font-size: 4rem;
+  }
+
+  .about-section__header h2 {
+    font-size: 1rem;
+  }
+
+  .landing {
+    text-align: left;
+    padding-left: 4rem;
+  }
+
+  .landing h1 {
+    font-size: 4.5rem;
+  }
+
+  .landing h2 {
+    padding: 0%;
+    font-size: 1.5rem;
+  }
+
+  .landing p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-me__description {
+    margin: 1.5rem 20%;
+  }
+
+  .about-section__header hr {
+    width: 27rem;
+  }
+
+  .about-section__header h1 {
+    font-size: 4.6rem;
+  }
+
+  .about-section__header h2 {
+    font-size: 1.1rem;
+  }
+
+  .landing {
+    padding-left: 9rem;
+  }
+
+  .landing h1 {
+    font-size: 5.5rem;
+  }
+
+  .landing h2 {
+    font-size: 1.8rem;
+  }
+
+  .landing p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-me__description {
+    margin: 1.5rem 25%;
+  }
+}

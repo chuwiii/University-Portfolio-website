@@ -98,11 +98,34 @@ p {
   font-size: 0.9rem;
 }
 
+.about-me__language--img div {
+  display: inline;
+}
+
 .about-me__language--img img {
   height: 8rem;
   width: 8rem;
   object-fit: contain;
-  margin: 2%;
+  margin: 10% 2%;
+}
+
+.about-me__language--bootstrapimg img {
+  object-fit: cover;
+}
+
+.about-me__language--cssimg img {
+  height: 6.5rem;
+  width: 6.5rem;
+}
+
+.about-me__language--htmlimg img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.about-me__language--jsimg img {
+  height: 6rem;
+  width: 6rem;
 }
 
 .about-section__header hr {
@@ -218,6 +241,7 @@ p {
   display: absolute;
   background-position: 50% 50%;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
 }
@@ -282,6 +306,28 @@ p {
   color: var(--white);
 }
 
+.past-works__header {
+  text-align: center;
+}
+
+.past-works__header hr {
+  /* width: 18rem; */
+  /* text-align: center; */
+}
+
+.past-works__header h1 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+
+.past-works__header h2 {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .site-logo {
   display: inline-block;
   position: absolute;
@@ -310,6 +356,16 @@ p {
   background-position: 50% 10%;
   height: 100%;
   /* filter: blur(0.25rem); */
+}
+
+#past-works {
+  background-color: var(--white);
+  padding: 11rem 10%;
+}
+
+#past-works p {
+  color: #757575;
+  font-family: var(--lora);
 }
 
 /* Media queries  */

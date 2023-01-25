@@ -63,7 +63,6 @@ p {
   height: 12.5rem;
   width: 12.5rem;
   border-radius: 50%;
-  /* border: 0.3px solid var(--light-grey); */
 }
 
 .about-me__button {
@@ -150,12 +149,37 @@ p {
   font-weight: 700;
 }
 
+.contact-header {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.contact-header h1 {
+  margin-bottom: 0;
+}
+
+.contact-header h2 {
+  color: var(--green);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .copyright {
   font-size: 0.7rem;
-  font-family: var(--mont);
   font-weight: 300;
   margin: 0;
   padding: 0.5rem;
+}
+
+.footer-links {
+  padding: 1rem;
+}
+
+.footer-links svg {
+  height: 2.5rem;
+  width: auto;
+  margin: 0 1rem;
+  color: var(--incognito-grey);
 }
 
 .header {
@@ -173,8 +197,7 @@ p {
   height: 100%;
   width: 17.5rem;
   right: 0;
-  z-index: 1;
-  /* display: none; */
+  z-index: 100;
   transform: translateX(100%);
   transition: 0.7s ease-in-out;
 }
@@ -210,8 +233,8 @@ p {
 }
 .header-nav__content h1 {
   font-size: 0.6875rem;
-  letter-spacing: 0.15rem;
   font-weight: 600;
+  letter-spacing: 0.15rem;
 }
 
 .header-nav__content li {
@@ -219,11 +242,10 @@ p {
 }
 
 .header-nav__content p {
-  margin-top: 4rem;
   color: var(--incognito-grey);
-  font-family: var(--mont);
-  font-weight: 300;
   font-size: 0.6rem;
+  font-weight: 300;
+  margin-top: 4rem;
 }
 
 .header-nav__content ul {
@@ -255,7 +277,6 @@ p {
   height: 100%;
   color: white;
   position: relative;
-  /* padding-left: 5rem; */
   padding-top: 22rem;
   text-align: center;
 }
@@ -306,18 +327,26 @@ p {
   color: var(--white);
 }
 
+.past-works__body {
+  margin: 4rem 0;
+}
+
+.past-works__body a {
+  text-decoration: underline var(--green);
+}
+
+.past-works__body a:hover {
+  color: var(--incognito-grey);
+  text-decoration: underline var(--green);
+}
+
 .past-works__header {
   text-align: center;
 }
 
-.past-works__header hr {
-  /* width: 18rem; */
-  /* text-align: center; */
-}
-
 .past-works__header h1 {
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-top: 1rem;
 }
 
@@ -326,6 +355,36 @@ p {
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.past-works__img {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.past-works__img img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--light-grey) 2px 2px 2px;
+}
+
+.past-works__text h1 {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.past-works__text h2 {
+  color: var(--light-grey);
+  vertical-align: middle;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.past-works__text p {
+  color: var(--black);
+  font-family: var(--lora);
+  font-size: 1rem;
+  text-transform: none;
 }
 
 .site-logo {
@@ -350,6 +409,11 @@ p {
   padding-bottom: 6rem;
 }
 
+#contact {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 #home {
   /* background-image: url(./images/pexels-markus-spiske-360591.jpg); */
   background-size: cover;
@@ -360,12 +424,9 @@ p {
 
 #past-works {
   background-color: var(--white);
-  padding: 11rem 10%;
-}
-
-#past-works p {
-  color: #757575;
-  font-family: var(--lora);
+  padding: 3.5rem 10%;
+  text-align: center;
+  position: relative;
 }
 
 /* Media queries  */

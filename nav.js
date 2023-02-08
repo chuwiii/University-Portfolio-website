@@ -39,7 +39,7 @@ navToggle.addEventListener("mouseout", function () {
 });
 
 aboutMeButton.addEventListener("click", function (e) {
-  goToSection(e, about);
+  goToSection(e, `#about`);
 });
 
 window.onscroll = () => {

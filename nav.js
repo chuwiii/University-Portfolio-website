@@ -8,6 +8,7 @@ const navContentButton = document.querySelector(".header-nav__content");
 
 function revertNav() {
   navbar.style.transform = "translateX(100%)";
+  navbar.classList.remove("active");
 }
 
 function goToSection(e, section) {
@@ -28,6 +29,7 @@ closeNav.addEventListener("click", function (e) {
 navToggle.addEventListener("click", function (e) {
   e.preventDefault();
   navbar.style.transform = "translateX(0%)";
+  navbar.classList.add("active");
 });
 
 navToggle.addEventListener("mouseover", function () {
@@ -48,7 +50,6 @@ window.onscroll = () => {
 };
 
 navContentButton.addEventListener("click", (e) => {
-  console.log(e.target);
   if (!e.target.classList.contains("nav__links")) return;
 
   const id = e.target.getAttribute("href");
